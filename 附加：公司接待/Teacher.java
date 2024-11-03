@@ -5,20 +5,21 @@ package communication;
  * @project_name insist
  * @Package communication
  * @Title Teacher.java
- * @Description: ¶¨ÒåTeacherÀà
- * @author ÕÅÇï¾ê
+ * @Description: ï¿½ï¿½ï¿½ï¿½Teacherï¿½ï¿½
+ * @author ï¿½ï¿½ï¿½ï¿½ï¿½
  * @date 2018-10-20
  * @version v1.0
- * @update 01 2018-10-20 ÕÅÇï¾ê  
+ * @update 01 2018-10-20 ï¿½ï¿½ï¿½ï¿½ï¿½  
  *
  */
 
 
 /****
  * @ClassName:Teacher
- * @Description:ÊµÏÖ³éÏó·½·¨eat()¡¢accommodate()ºÍ travel()
- * @author ÕÅÇï¾ê
+ * @Description:Êµï¿½Ö³ï¿½ï¿½ó·½·ï¿½eat()ï¿½ï¿½accommodate()ï¿½ï¿½ travel()
+ * @author ï¿½ï¿½ï¿½ï¿½ï¿½
  * @date 2018-10-20
+ * myBranch--------------------------
  */
 
 public class Teacher extends AbstractRecption{
@@ -26,17 +27,17 @@ public class Teacher extends AbstractRecption{
 
 	/**   
 	 * @Title:Teacher
-	 * @Description:¹¹ÔìTeacher¶ÔÏó   
-	 * @param: type ·Ã¿ÍÀàÐÍ
+	 * @Description:ï¿½ï¿½ï¿½ï¿½Teacherï¿½ï¿½ï¿½ï¿½   
+	 * @param: type ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @throws   
 	 */ 
 	
 	public Teacher(String type) {
 		
-		/*µ÷ÓÃ»ùÀà¹¹Ôì·½·¨£¬ÉèÖÃ·Ã¿ÍÀàÐÍÎª½ÌÊ¦*/
+		/*ï¿½ï¿½ï¿½Ã»ï¿½ï¿½à¹¹ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã·Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ê¦*/
 		super(type);
 		
-		/*¹æ¶¨½ÌÊ¦·Ã¿ÍÒ»Ìì²Í·Ñ500Ôª£¬ÂÃ¹ÝÎª300Ôª/Íí£¬±¨Ïú³Ô×¡ÐÐµÄ80%*/
+		/*ï¿½æ¶¨ï¿½ï¿½Ê¦ï¿½Ã¿ï¿½Ò»ï¿½ï¿½Í·ï¿½500Ôªï¿½ï¿½ï¿½Ã¹ï¿½Îª300Ôª/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¡ï¿½Ðµï¿½80%*/
 		super.setMeals(500);
 		super.setHotel(300);
 		super.setRatio(0.8);
@@ -44,8 +45,8 @@ public class Teacher extends AbstractRecption{
 
 	/**   
 	 * @Title:eat
-	 * @Description:¼ÆËã±¨ÏúµÄ×Ü²Í·Ñ
-	 * @param: days ½Ó´ýÌìÊý
+	 * @Description:ï¿½ï¿½ï¿½ã±¨ï¿½ï¿½ï¿½ï¿½ï¿½Ü²Í·ï¿½
+	 * @param: days ï¿½Ó´ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @return: double
 	 * @throws   
 	 */  
@@ -53,7 +54,7 @@ public class Teacher extends AbstractRecption{
 	@Override
 	public double eat(int days) {
 		
-		/*±¨ÏúµÄ×Ü²Í·Ñ=Ò»Ìì²Í·Ñ*ÌìÊý*±¨Ïú±È*/
+		/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü²Í·ï¿½=Ò»ï¿½ï¿½Í·ï¿½*ï¿½ï¿½ï¿½ï¿½*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 		double money=super.getMeals()*days*super.getRatio();
 		return money;
 		
@@ -61,8 +62,8 @@ public class Teacher extends AbstractRecption{
 	
 	/**   
 	 * @Title:accommodate
-	 * @Description:¼ÆËã±¨ÏúµÄ×Ü×¡ËÞ·Ñ
-	 * @param: days ½Ó´ýÌìÊý
+	 * @Description:ï¿½ï¿½ï¿½ã±¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¡ï¿½Þ·ï¿½
+	 * @param: days ï¿½Ó´ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @return: double
 	 * @throws   
 	 */  
@@ -70,7 +71,7 @@ public class Teacher extends AbstractRecption{
 	@Override
 	public double accommodate(int days) {
 		
-		/*±¨ÏúµÄ×Ü×¡ËÞ·Ñ=Ò»ÌìµÄ×¡ËÞ·Ñ*ÌìÊý*±¨Ïú±È*/
+		/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¡ï¿½Þ·ï¿½=Ò»ï¿½ï¿½ï¿½×¡ï¿½Þ·ï¿½*ï¿½ï¿½ï¿½ï¿½*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 		double money=super.getHotel()*days*super.getRatio();
 		return money;
 	}
@@ -78,15 +79,15 @@ public class Teacher extends AbstractRecption{
 	
 	/**   
 	 * @Title:travel
-	 * @Description:¼ÆËã±¨ÏúµÄ×ÜÂ··Ñ£¬°üÀ¨À´»Ø
-	 * @param: fare Íù·µ³µ·Ñ
+	 * @Description:ï¿½ï¿½ï¿½ã±¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½Ñ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * @param: fare ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @return: double
 	 * @throws   
 	 */  
 	@Override
 	public double travel(double fare) {
 		
-		/*±¨ÏúµÄ×ÜÂ··Ñ=À´»ØÂ··Ñ*±¨Ïú±È*/
+		/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½=ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 		return super.getRatio()*fare;
 		
 	}
