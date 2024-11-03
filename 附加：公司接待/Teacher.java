@@ -19,7 +19,7 @@ package communication;
  * @Description:ʵ�ֳ��󷽷�eat()��accommodate()�� travel()
  * @author �����
  * @date 2018-10-20
- * myBranch--------------------------
+ * myBranch--------------------------111
  */
 
 public class Teacher extends AbstractRecption{
